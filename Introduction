@@ -1,0 +1,29 @@
+MRI uses magnetic fields and radio waves to visualize detailed images of organs,soft tissues,bones,ligaments and cartilage. 
+An important area of study in the realm of MR image processing has been MR image de-noising. Field intensity, RF pulses, RF coil, 
+voxel volume, or receiver bandwidth may all contribute to the noise in MRI images. Rician noise, Gaussian noise, and Rayleigh noise
+make up the majority of the noise in MRI pictures. 
+
+Gaussian noise is statistical noise having a probability density function (PDF) equal to the normal distribution. However, when the SNR magnitude 
+in MR images is greater than 2, then Rician distribution, transforms to Gaussian noise distribution and when SNR is approaching zero it converges to 
+Rayleigh distribution. 
+
+Electronic interferences in receiver circuits, radio frequency emissions resulting from the thermal mobility of ions in the patient’s body, and the measurement 
+chain of MRI scanners, including coils, electronic circuits, etc. are the main causes of noise in MRI images. Due to signal-dependent data bias, noise in MRI 
+results in random oscillations that lower image contrast. The presence of noise in medical imaging has a direct or indirect impact that makes rapid diagnosis, 
+analysis, and therapy more challenging. 
+
+A highly accurate brain image is a prerequisite for error free diagnosis. Image acquisition techniques expose patients to very high radiation. 
+Since decreasing the radiation is important for the safety of patients, the acquired images are prone to more noise. Hence denoising of medical images are of 
+utmost importance in the field of medicine. 
+
+A Convolutional Denoising Autoencoder(CDAE) for is capable of removing noise from these images. Convolutional autoencoders are capable of retaining the spatial
+information of the input image and gently extract the the data without much loss. Image denoising is a common issue in computer vision and has been thoroughly
+researched by academics. Various denoising techniques have been adopted in the past few years. The choice of a denoising technique strongly depends on the available data
+and the application. 
+
+A lot of work has been done on MRI denoising such as Median filter, Wiener filter, Average filter, Principal Component Analysis (PCA), Wavelet Thresholding, 
+Independent Component Analysis (ICA) and Topographic ICA,NLM (non-local means) ,LRTV (low-rank and total variation) etc.
+For many real-world problems requiring digital image processing, deep learningbased techniques have proven to be the most effective answers. They have also been
+used as a natural substitute for non-learning dependent filters and prior knowledgebased denoising algorithms. Such learning-based strategies are less influenced by
+the non-linear properties of noise generation processes. These include Denoising AutoEncoder (DAE), Noise2Noise, Noise2Void, and GANs. These techniques make
+the use of Convolutional Neural Networks(CNN), which take advantage of the spatially structured information in medical images.
